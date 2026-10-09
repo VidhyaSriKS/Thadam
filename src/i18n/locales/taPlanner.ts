@@ -1,0 +1,81 @@
+import { enPlanner } from './enPlanner';
+
+export const taPlanner: Record<keyof typeof enPlanner, string> = {
+  // Section Headings
+  secStartLocation: '1. தொடங்கும் இடம்',
+  secDestination: '2. சேருமிடம் / பகுதி தேர்வு',
+  secDates: '3. பயணத் தேதிகள்',
+  secTravelers: '4. பயணிகள்',
+  secBudget: '5. மொத்த பட்ஜெட்',
+  secInterests: '6. சுற்றுலா ஆர்வங்கள்',
+  secDestPreference: '7. இட விருப்பம்',
+  secCrowd: '8. கூட்ட விருப்பம்',
+  secTransport: '9. போக்குவரத்து & பயண நேரம்',
+  secAccommodation: '10. தங்குமிடம்',
+  secFood: '11. உணவு விருப்பம்',
+  secFacilities: '12. அத்தியாவசிய வசதிகள் & தேவைகள்',
+  secNotes: '13. கூடுதல் குறிப்புகள்',
+  secSummary: '14. பயணத் திட்ட சுருக்கம்',
+
+  // Field Labels & Hints
+  selectStartDistrict: 'தொடங்கும் மாவட்டத்தைத் தேர்வு செய்க',
+  useMyLocation: 'என் தற்போதைய இருப்பிடத்தைப் பயன்படுத்து (கோயம்புத்தூர்)',
+  selectDestinationRegion: 'சேருமிடத்தைத் தேர்வு செய்க',
+  selectDestinationDistrict: 'இலக்கு மாவட்டத்தைத் தேர்வு செய்க',
+  letThadamChoose: 'தடமே தேர்வு செய்யட்டும் (முழு தமிழ்நாடு)',
+  selectedDestination: 'தேர்வு செய்யப்பட்ட இடம்:',
+  startDateLabel: 'தொடங்கும் தேதி',
+  endDateLabel: 'முடியும் தேதி',
+  selectDatesCalendar: 'தேதிகள் தேர்வு (காலண்டர்)',
+  tapToChangeCalendar: 'காலண்டரில் மாற்ற தட்டவும்',
+  totalTravelersBadge: 'மொத்த பயணிகள்:',
+  adultsLabel: 'பெரியவர்கள் (12+ வயது)',
+  childrenLabel: 'குழந்தைகள் (2-11 வயது)',
+  seniorsLabel: 'முதியவர்கள் (60+ வயது)',
+  budgetLabel: 'மொத்த பயண பட்ஜெட் (₹)',
+  maxTravelTimeLabel: 'அதிகபட்ச தொடர் பயண நேரம்:',
+  preferredTransportLabel: 'விருப்பமான வாகனம்:',
+  alternativeTransportLabel: 'மாற்று வாகனம்:',
+  interestsHint: 'பல தலைப்புகளைத் தேர்வு செய்யலாம்:',
+  facilitiesHint: 'திட்டமிடலில் கட்டாய விதிகளாகக் கருதப்படும்:',
+  notesPlaceholder: 'உங்கள் பயணம் பற்றி தடத்திற்கு வேறு ஏதேனும் கூற விரும்புகிறீர்களா (எ.கா. அமைதியான இடங்கள், கூட்ட நெரிசலற்ற இடங்கள்)...',
+  smartMixSubtitle: 'இடங்களின் விகிதம் (மொத்தம் 100%)',
+  hiddenMixExplanation: '“மறைக்கப்பட்ட இடங்கள் என்பது அணுகல்தன்மை மற்றும் தகவல்களின் அடிப்படையில் தேர்ந்தெடுக்கப்பட்ட சரிபார்க்கப்பட்ட அரிய இடங்கள்.”',
+
+  // Preference Options
+  prefFamous: 'பிரபலமானவை',
+  prefModerate: 'மிதமானவை',
+  prefHidden: 'அரிய பொக்கிஷங்கள்',
+  prefMixed: 'கலவை',
+  crowdLow: '🍃 குறைவு',
+  crowdModerate: '⚖️ மிதம்',
+  crowdAny: '⚡ எதுவும்',
+
+  // Calendar Modal
+  calSelectStartDate: 'தொடங்கும் தேதியைத் தேர்வு செய்க',
+  calSelectEndDate: 'முடியும் தேதியைத் தேர்வு செய்க',
+  calSelectedStartDate: 'தேர்ந்தெடுத்த தொடக்க தேதி',
+  calSelectedEndDate: 'தேர்ந்தெடுத்த இறுதி தேதி',
+
+  // Summary Card
+  summaryPreTitle: 'பயண சுருக்கம்',
+  summaryTitle: 'உங்கள் தனிப்பயன் பயணம்',
+  summaryStartingDistrict: 'தொடங்கும் மாவட்டம்:',
+  summaryDuration: 'கால அளவு:',
+  summaryTravelers: 'பயணிகள்:',
+  summaryBudget: 'பட்ஜெட்:',
+  summaryInterests: 'ஆர்வங்கள்:',
+  summaryDestMix: 'இடங்களின் கலவை:',
+  summaryCrowd: 'கூட்ட அளவு:',
+  summaryTransport: 'போக்குவரத்து:',
+  summaryMaxTravel: 'அதிகபட்ச பயண நேரம்:',
+  summaryStay: 'தங்குமிடம்:',
+  summaryFood: 'உணவு:',
+  summaryRequirements: 'தேவைகள்:',
+  standardSafety: 'வழக்கமான பாதுகாப்பு',
+
+  // CTAs & Validation
+  createSmartTrip: 'என் ஸ்மார்ட் பயணத் திட்டத்தை உருவாக்கு',
+  ctaSubtitle: 'தடம் AI சரிபார்க்கப்பட்ட பாரம்பரியத் தரவு, கூட்ட நெரிசல் மற்றும் உள்ளூர் கைவினைஞர்களை பகுப்பாய்வு செய்து பாதையை அமைக்கிறது.',
+  dateErrorOrder: 'முடியும் தேதி தொடங்கும் தேதிக்கு முன்னதாக இருக்க முடியாது.',
+};
